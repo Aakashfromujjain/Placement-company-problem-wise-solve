@@ -9,13 +9,11 @@ struct Edge {
     int u, v;
     long long weight;
     
-    // Sort edges based on weight
     bool operator<(const Edge& other) const {
         return weight < other.weight;
     }
 };
 
-// Disjoint Set Union (DSU) structure
 struct DSU {
     vector<int> parent, rank;
     
